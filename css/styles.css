@@ -1,0 +1,137 @@
+/*add orbit image*/
+/*work with rems and ems instead of pixels?*/
+
+/****************** COLOR STYLES ****************+*/
+
+:root {
+    --primary: #072AC8;
+    --accent: #43D2FF;
+    --hover: #A2D6F9;
+    --tapped: #D1EDFF;
+    --dark: #292E47;
+    --medium: #6B708D;
+    --light: #F2F4FC;
+    --light-blue: #ECF7FF;
+    --secondary: #FFC600;
+}
+
+/****************** TIPOGRAFIA ****************+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap') * {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: var(--light);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/****************** TEXT STYLES ****************+*/
+
+h1 {
+    font-size: 60px;
+    color: var(--dark);
+}
+
+/* h2 {
+    font-size: 50px;
+} */
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+
+/******
+bold: 700
+medium: 500
+regular:400
+****+*/
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+.bodyReg {
+    font-size: 20px;
+    font-weight: 400;
+    color: var( --medium);
+}
+
+
+/* services cpt */
+.bodyMed { 
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+/* navbar,boton  no hace falta plicar en html??
+.headlineMed
+*/
+nav a, button  { 
+    font-weight: 500;
+    font-size: 17px;
+}
+
+ button { 
+    font-family: inherit;
+} 
+
+
+/* pr desc, learn more, Kristin, roboto medium 24 yellow txt*/ 
+.headlineReg {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.captionOne {
+    font-weight: 400;
+    font-size: 15px;
+}
+/* booking */
+.captionTwo {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+ul {
+    list-style-type: none;
+   justify-content: space-between;
+   /* overflow: hidden; */
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    text-decoration: none;
+}
+
+nav {
+    display: inline-flex;
+}
+/* nav img {
+    float: left;
+} */
+nav button {
+    float: right;
+}
+
+.btn-blue {
+background: var(--primary);
+color: #FFFFFF;
+padding: 15px 36px;
+}
