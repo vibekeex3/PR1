@@ -17,7 +17,11 @@
 
 /****************** TIPOGRAFIA ****************+*/
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap') * {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap')
+
+
+
+* {
     margin: 0;
     padding: 0;
 }
@@ -27,7 +31,12 @@ body {
     background-color: var(--light);
     font-family: 'Roboto', sans-serif;
 }
-
+ 
+/* hace falta crear esta clase o aplicar a body? */
+.container {
+    margin: 0, auto;
+    padding: 70px 170px;
+}
 
 
 /****************** TEXT STYLES ****************+*/
@@ -77,6 +86,11 @@ h4 {
 }
 
 
+
+/****************** NAVBAR ****************+*/
+
+
+
 /* navbar,boton  no hace falta plicar en html??
 .headlineMed
 */
@@ -108,12 +122,13 @@ nav a, button  {
 
 ul {
     list-style-type: none;
-   justify-content: space-between;
+  
    /* overflow: hidden; */
 }
 
 li {
     display: inline;
+    margin: 0 30px;
 }
 
 li a {
@@ -121,17 +136,30 @@ li a {
 }
 
 nav {
-    display: inline-flex;
-}
-/* nav img {
-    float: left;
-} */
-nav button {
-    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*  vertically center the items */
+    width: 100%; 
 }
 
 .btn-blue {
 background: var(--primary);
 color: #FFFFFF;
-padding: 15px 36px;
+padding: 15px 33px;
 }
+
+
+
+/*************+ Styles for links ******+***********/
+a:not(:active) {
+    color: var(--medium);
+}
+
+a.active {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--hover);
+}
+
