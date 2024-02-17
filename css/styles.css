@@ -21,8 +21,7 @@ fixed header
 
 /****************** TIPOGRAFIA ****************+*/
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap')
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 
 * {
@@ -35,10 +34,18 @@ body {
     background-color: var(--light);
     font-family: 'Roboto', sans-serif;
 }
- 
+
+header,
+main,
+footer {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 /* hace falta crear esta clase o aplicar a body? */
 .container {
-    margin: 0, auto;
+    margin: 0 auto;
     padding: 70px 170px;
 }
 
@@ -51,7 +58,7 @@ section {
 
 h1 {
     font-size: 60px;
- 
+
 }
 
 /* h2 {
@@ -60,6 +67,7 @@ h1 {
 
 h3 {
     font-size: 40px;
+    padding-bottom: 50px;
 }
 
 h4 {
@@ -84,28 +92,29 @@ h4 {
 .body-reg {
     font-size: 20px;
     font-weight: 400;
-    color: var( --medium);
+    color: var(--medium);
 }
 
 
 /* services cpt */
-.body-med { 
+.body-med {
     font-size: 24px;
     font-weight: 500;
     color: var(--dark);
 }
 
-/* pr desc, learn more, Kristin, roboto medium 24 yellow txt*/ 
+/* pr desc, learn more, Kristin, roboto medium 24 yellow txt*/
 .headline-reg {
     font-weight: 400;
     font-size: 17px;
-    color: var( --medium);
+    color: red;
 }
 
 .caption-one {
     font-weight: 400;
     font-size: 15px;
 }
+
 /* booking */
 .caption-two {
     font-weight: 400;
@@ -120,7 +129,8 @@ h4 {
 /* navbar,boton  no hace falta plicar en html??
 .headlineMed
 */
-nav a, button  { 
+nav a,
+button {
     font-weight: 500;
     font-size: 17px;
 }
@@ -143,21 +153,22 @@ li a {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center; /*  vertically center the items */
-    width: 100%; 
+    align-items: center;
+    /*  vertically center the items */
+    width: 100%;
 }
 
 /*************+ buttons styles ******+***********/
 
-button { 
+button {
     font-family: inherit;
-} 
+}
 
 
 .btn-blue {
-background: var(--primary);
-color: #FFFFFF;
-padding: 15px 33px;
+    background: var(--primary);
+    color: #FFFFFF;
+    padding: 15px 33px;
 }
 
 .btn-whi {
@@ -165,7 +176,7 @@ padding: 15px 33px;
     color: var(--medium);
     padding: 15px 33px;
     border: none;
-    }
+}
 
 /*************+ Styles for links ******+***********/
 a:not(:active) {
@@ -187,13 +198,15 @@ a:hover {
 }
 
 
-.hero > div {
-    flex: 1; /* Each div takes up equal space */
-    padding: 0 30px; 
+.hero>div {
+    flex: 1;
+    /* Each div takes up equal space */
+    padding: 0 30px;
 }
 
 img {
-    max-width: 100%; /* Adjust image size for smaller screens */
+    max-width: 100%;
+    /* Adjust image size for smaller screens */
 }
 
 .hero div.floating-images {
@@ -201,7 +214,8 @@ img {
 }
 
 img.man {
-    width: 100%; /* Ensure the large image fills the container */
+    width: 100%;
+    /* Ensure the large image fills the container */
     display: block;
 }
 
@@ -209,7 +223,7 @@ img.man {
     position: absolute;
     top: 20px;
     left: 0;
-    width: 30%; 
+    width: 30%;
     height: auto;
 }
 
@@ -217,7 +231,7 @@ img.man {
     position: absolute;
     bottom: -20px;
     right: 0;
-    width: 30%; 
+    width: 30%;
     height: auto;
 }
 
@@ -234,3 +248,54 @@ section.logos li {
     filter: grayscale(1);
 }
 
+/*************+ PROJECTS SECTION ******+***********/
+
+#projects div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#projects div>article {
+    background-color: #FFFFFF;
+    height: 100%;
+    max-height: 444px;
+}
+
+#projects article img {
+    height: 100%;
+    max-height: 240px;
+    width: 100%;
+    max-width: 340px;
+}
+
+#projects article div {
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    display: block;
+    max-width: 100%;
+}
+
+/* .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } */
+
+#projects article div * {
+    padding: 5px 0px;
+}
+
+#projects article div span {
+    display: block;
+    padding: 40px 0px 20px 0px;
+    color: var(--primary);
+}
+
+#projects article div p:last-of-type {
+    color: var(--medium);
+}
