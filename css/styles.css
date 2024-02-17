@@ -51,7 +51,7 @@ section {
 
 h1 {
     font-size: 60px;
-    color: var(--dark);
+ 
 }
 
 /* h2 {
@@ -78,6 +78,7 @@ h2,
 h3,
 h4 {
     font-weight: 700;
+    color: var(--dark);
 }
 
 .body-reg {
@@ -91,8 +92,25 @@ h4 {
 .body-med { 
     font-size: 24px;
     font-weight: 500;
+    color: var(--dark);
 }
 
+/* pr desc, learn more, Kristin, roboto medium 24 yellow txt*/ 
+.headline-reg {
+    font-weight: 400;
+    font-size: 17px;
+    color: var( --medium);
+}
+
+.caption-one {
+    font-weight: 400;
+    font-size: 15px;
+}
+/* booking */
+.caption-two {
+    font-weight: 400;
+    font-size: 13px;
+}
 
 
 /****************** NAVBAR ****************+*/
@@ -108,32 +126,14 @@ nav a, button  {
 }
 
 
-
-/* pr desc, learn more, Kristin, roboto medium 24 yellow txt*/ 
-.headline-reg {
-    font-weight: 400;
-    font-size: 17px;
-}
-
-.caption-one {
-    font-weight: 400;
-    font-size: 15px;
-}
-/* booking */
-.caption-two {
-    font-weight: 400;
-    font-size: 13px;
-}
-
 ul {
     list-style-type: none;
-  
-   /* overflow: hidden; */
+    padding: 0;
 }
 
-li {
+nav li {
     display: inline;
-    margin: 0 30px;
+    margin: 10px 30px;
 }
 
 li a {
@@ -220,3 +220,17 @@ img.man {
     width: 30%; 
     height: auto;
 }
+
+
+/*************+ LOGOS SECTION ******+***********/
+
+.logos ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+section.logos li {
+    display: inline;
+    filter: grayscale(1);
+}
+
