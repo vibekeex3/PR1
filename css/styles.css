@@ -1,5 +1,9 @@
 /*add orbit image*/
-/*work with rems and ems instead of pixels?*/
+/*work with rems and ems instead of pixels?
+fixed header
+
+
+*/
 
 /****************** COLOR STYLES ****************+*/
 
@@ -39,6 +43,10 @@ body {
 }
 
 
+section {
+    padding: 80px 0;
+}
+
 /****************** TEXT STYLES ****************+*/
 
 h1 {
@@ -72,7 +80,7 @@ h4 {
     font-weight: 700;
 }
 
-.bodyReg {
+.body-reg {
     font-size: 20px;
     font-weight: 400;
     color: var( --medium);
@@ -80,7 +88,7 @@ h4 {
 
 
 /* services cpt */
-.bodyMed { 
+.body-med { 
     font-size: 24px;
     font-weight: 500;
 }
@@ -99,23 +107,20 @@ nav a, button  {
     font-size: 17px;
 }
 
- button { 
-    font-family: inherit;
-} 
 
 
 /* pr desc, learn more, Kristin, roboto medium 24 yellow txt*/ 
-.headlineReg {
+.headline-reg {
     font-weight: 400;
     font-size: 17px;
 }
 
-.captionOne {
+.caption-one {
     font-weight: 400;
     font-size: 15px;
 }
 /* booking */
-.captionTwo {
+.caption-two {
     font-weight: 400;
     font-size: 13px;
 }
@@ -142,13 +147,25 @@ nav {
     width: 100%; 
 }
 
+/*************+ buttons styles ******+***********/
+
+button { 
+    font-family: inherit;
+} 
+
+
 .btn-blue {
 background: var(--primary);
 color: #FFFFFF;
 padding: 15px 33px;
 }
 
-
+.btn-whi {
+    background: var(--light);
+    color: var(--medium);
+    padding: 15px 33px;
+    border: none;
+    }
 
 /*************+ Styles for links ******+***********/
 a:not(:active) {
@@ -163,3 +180,43 @@ a:hover {
     color: var(--hover);
 }
 
+
+/*************+ HERO SECTION ******+***********/
+.hero {
+    display: flex;
+}
+
+
+.hero > div {
+    flex: 1; /* Each div takes up equal space */
+    padding: 0 30px; 
+}
+
+img {
+    max-width: 100%; /* Adjust image size for smaller screens */
+}
+
+.hero div.floating-images {
+    position: relative;
+}
+
+img.man {
+    width: 100%; /* Ensure the large image fills the container */
+    display: block;
+}
+
+.small-image {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 30%; 
+    height: auto;
+}
+
+.small-image-thumb {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    width: 30%; 
+    height: auto;
+}
