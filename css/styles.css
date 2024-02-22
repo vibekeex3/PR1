@@ -96,14 +96,11 @@ h4 {
     color: var(--medium);
 }
 
-
-/* services cpt */
 .body-med {
     font-size: 24px;
     font-weight: 500;
 }
 
-/* pr desc, learn more, Kristin*/
 .headline-reg {
     font-weight: 400;
     font-size: 17px;
@@ -114,7 +111,6 @@ h4 {
     font-size: 15px;
 }
 
-/* booking */
 .caption-two {
     font-weight: 400;
     font-size: 13px;
@@ -492,4 +488,34 @@ section#newsletter {
 #newsletter button {
     padding: 30px 61px;
     margin-left: 20px;
+}
+
+
+
+/*************+ FOOTER******+***********/
+
+footer {
+    padding: 170px 0 40px 0;
+    display: flex; 
+    justify-content: space-around;
+}
+
+footer img {
+    height: 30px;
+    width: auto;
+}
+
+
+div.links ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-auto-rows: auto; /* Automatically sized rows */
+    grid-gap: 60px; /* Adjust the gap between grid items */
+}
+
+footer address  {
+    margin-top: 30px;
+    font-style: normal;
+    line-height: 1.4;
+    color: var(--medium);
 }
