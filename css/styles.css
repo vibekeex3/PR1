@@ -510,7 +510,7 @@ div.links ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-auto-rows: auto; /* Automatically sized rows */
-    grid-gap: 60px; /* Adjust the gap between grid items */
+    grid-gap: 60px; 
 }
 
 footer address  {
@@ -519,3 +519,61 @@ footer address  {
     line-height: 1.4;
     color: var(--medium);
 }
+
+
+
+
+
+/*************+ CONTACT PAGE ******+***********/
+
+.cont {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+  }
+  
+
+label {
+    display: block;
+      margin-bottom: 5px;
+    }
+    
+    
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea{
+          width: 100%;
+          padding: 5px;
+        box-sizing: border-box; /* Ensure padding is included in the width */
+        border: none;
+        padding: 15px;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    
+    .half-width {
+      width: calc(50% - 5px); /* Adjust as needed */
+      display: inline;
+      box-sizing: border-box;
+      margin-right: 10px; /* Adjust spacing between divs */
+      vertical-align: top;
+    }
+    
+    
+    
+    input[type=submit] {
+      cursor: pointer;
+    }
+    
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+   
+
+    
