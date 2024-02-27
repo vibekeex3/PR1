@@ -1,9 +1,7 @@
-
-
 /*************+ CONTACT PAGE ******+***********/
 
 #contact {
-    padding: 0 100px;
+    margin: 0 100px;
 }
 
 .cont {
@@ -64,11 +62,41 @@ textarea {
     /*image of a pointing hand*/
 }
 
-button:hover {
-    background-color: var(--hover);
-    /*change color when hover*/
+
+
+@media only screen and (max-width: 480px) {
+
+
+#contact {
+    margin: 0 50px;
+    padding-bottom: 0;
+}
+
+.half-width {
+    display: block;
+}
+
+.half-width label {
+    width: 100%;
+}
+
+.cont input[type="email"],
+.cont input[type="tel"] {
+       width: 100%;
+}
+
+.cont input[type="text"],
+.cont input[type="email"],
+.cont input[type="tel"],
+.cont textarea {
+    padding: 1em;
+    margin-bottom: 10px;
 }
 
 
+.cont button {
+    width: 100%;
+    padding: 15px 0;
+}
 
-
+}

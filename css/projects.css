@@ -43,3 +43,44 @@
     filter: blur(20px);
 }
 
+
+
+
+/**************************************************+*/
+/****************   MOBILE VERSION   **************+*/
+/**************************************************+*/
+
+@media only screen and (max-width: 425px) {
+
+    .chosen-project div.project-details {
+        display: block;
+    }
+
+    .chosen-project p {
+        padding: 2px 0;
+    }
+    
+    .chosen-project div.project-details p:nth-of-type(2) {
+        font-size: 12px;
+    }
+
+    .background-img {
+        position: absolute;
+        top: 5px;
+        z-index: 1;
+        opacity: 0.5;
+        filter: blur(20px);
+    }
+    
+div.image-container {
+    margin: 15px 0;
+}
+
+
+
+
+
+
+
+
+}

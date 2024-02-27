@@ -1,3 +1,7 @@
+/****************** FONT ****************+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 
 /****************** COLOR STYLES ****************+*/
 
@@ -13,13 +17,7 @@
     --secondary: #FFC600;
 }
 
-/****************** FONT ****************+*/
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
-
 /****************** GENERAL STYLES ****************+*/
-
 
 * {
     margin: 0;
@@ -125,14 +123,15 @@ nav li {
     margin: 10px 30px;
 }
 
-li a {
+ a {
     text-decoration: none;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center; /*  vertically center the items */
+    align-items: center;
+    /*  vertically center the items */
     width: 100%;
 }
 
@@ -148,7 +147,7 @@ button {
 .btn-blue {
     background: var(--primary);
     color: #FFFFFF;
- 
+
 }
 
 .btn-whi {
@@ -157,19 +156,31 @@ button {
 }
 
 /*************+ Styles for links ******+***********/
-a:not(:active) {
+li a:not(:active) {
     color: var(--medium);
 }
 
-a.active {
+span a:not(:active) {
+    color: var(--primary);
+}
+
+li a.active {
     color: var(--primary);
 }
 
 a:hover {
     color: var(--hover);
+    cursor: pointer;
+    /*image of a pointing hand*/
 }
 
 
+button:hover {
+    background-color: var(--hover);
+    /*change color when hover*/
+    cursor: pointer;
+    /*image of a pointing hand*/
+}
 
 /****************** fixed header ****************+*/
 
@@ -293,8 +304,8 @@ section#newsletter {
 
 /*************+ FOOTER******+***********/
 
-footer {
-    padding: 170px 0 40px 0;
+footer.container {
+    padding: 100px 0 70px;
     display: flex;
     justify-content: space-around;
 }
@@ -304,6 +315,12 @@ footer img {
     width: auto;
 }
 
+footer address {
+    margin-top: 30px;
+    font-style: normal;
+    line-height: 1.4;
+    color: var(--medium);
+}
 
 div.links ul {
     display: grid;
@@ -314,12 +331,171 @@ div.links ul {
     grid-gap: 60px;
 }
 
-footer address {
-    margin-top: 30px;
-    font-style: normal;
-    line-height: 1.4;
-    color: var(--medium);
+
+
+/**************************************************+*/
+/****************   MOBILE VERSION   **************+*/
+/**************************************************+*/
+
+@media only screen and (max-width: 480px) {
+
+    * {
+        margin: 0 auto;
+    }
+
+
+    .container {
+        margin: 0 auto;
+        padding: 20px 15px;
+        width: 100%;
+        max-width: 480px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        /* mobile screen has rounded edges */
+    }
+
+
+    section {
+        padding: 50px 0;
+    }
+
+    /****************** TEXT STYLES ****************+*/
+
+    h1 {
+        font-size: 30px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+
+    h3 {
+        font-size: 24px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+
+    .body-reg {
+        font-size: 16px;
+    }
+
+    .body-med {
+        font-size: 16px;
+    }
+
+    .headline-reg {
+        font-size: 14px;
+    }
+
+    .caption-one {
+        font-size: 15px;
+    }
+
+    .caption-two {
+        font-size: 12px;
+    }
+
+
+    /****************** navbar ****************+*/
+
+
+    header nav ul,
+    header nav button {
+        overflow: hidden;
+        display: none;
+    }
+
+    header nav img {
+        display: block;
+        margin: 0 auto;
+        /* Centers the image horizontally */
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+
+
+    /****************** PROJECTS SECTION ****************+*/
+
+
+
+
+    #projects div {
+        /* width: 340px; */
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    #projects div article {
+        width: 340px;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+    #projects article div * {
+        padding: 2px 0px;
+    }
+
+    #projects article div span {
+        padding: 20px 0px 10px;
+        text-align: center;
+    }
+
+
+    /****************** NEWSLETTER SECTION ****************+*/
+
+
+    #newsletter form input {
+        height: 4em;
+        padding-left: 60px;
+        /* leave space for the icon */
+    }
+
+    /* #newsletter form div {
+    max-width: 320px; 
+    width: 100%;
+} */
+
+    #newsletter form img {
+        left: 20px;
+        /* change absolute positioning more to the left */
+    }
+
+    #newsletter button {
+        padding: 20px 40px;
+        margin: 20px;
+    }
+
+    #newsletter form {
+        display: block;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+
+
+    /****************** FOOTER SECTION ****************+*/
+
+
+    footer.container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer address {
+        margin: 10px 0 50px;
+    }
+    
+    div.links ul {
+        grid-gap: 40px;
+    }
+
+
+
 }
-
-
-

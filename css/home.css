@@ -1,8 +1,8 @@
-
 /*************+ HERO SECTION ******+***********/
 
 .hero {
     display: flex;
+    margin-top: 50px;
 }
 
 
@@ -24,6 +24,7 @@ img {
 
 .hero div.floating-images {
     position: relative;
+    height: 500px;
 }
 
 img.man {
@@ -161,7 +162,8 @@ address p:first-of-type {
 
 #services div>article {
     background-color: #FFFFFF;
-    height: 380px;
+    min-height: 280px;
+    overflow: hidden;
     filter: drop-shadow(0px 5px 5px #e1e3eb);
     /**create shadow**/
     padding: 40px 30px 30px 30px;
@@ -191,11 +193,78 @@ address p:first-of-type {
 
 #services article span {
     color: var(--primary);
-    /* position: absolute;
-    bottom: 30px; */
     display: block;
-    padding-top: 90px;
+    padding: 40px 0px 20px 0px;
 }
 
+/* padding-top: 90px; */
 
 
+
+/**************************************************+*/
+/****************   MOBILE VERSION   **************+*/
+/**************************************************+*/
+
+@media only screen and (max-width: 480px) {
+
+
+    .hero {
+        flex-direction: column;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .logos ul {
+        flex-wrap: wrap;
+    }
+
+    .logos img {
+        max-height: 26px;
+        width: auto;
+        margin: 5px;
+    }
+
+    .testimonial div {
+        padding: 0 10px;
+        margin: 0px;
+    }
+
+    .testimonial div img {
+        width: 100px;
+        height: auto;
+    }
+
+    .testimonial div:nth-of-type(2) {
+        padding: 10px;
+    }
+
+    section.testimonial {
+        background-size: cover;
+        display: flex;
+        text-align: center;
+    }
+
+    .testimonial div q {
+        padding: 30px 0;
+    }
+
+
+
+    #services div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #services div>article {
+        padding: 30px;
+    }
+
+    #services article span {
+        padding: 40px 0 0;
+    }
+
+
+
+}
