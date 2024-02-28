@@ -29,14 +29,11 @@ function displayProjectDetails(project) {
     const projectNameElement = document.querySelector('.chosen-project h1');
     projectNameElement.textContent = project.name;
 
-    const projectDescriptionElement = document.querySelector('.chosen-project .body-med');
+    const projectDescriptionElement = document.querySelector('.chosen-project p:first-of-type');
     projectDescriptionElement.textContent = project.description;
 
-    const completedOnElement = document.querySelector('.chosen-project .body-reg span');
-    completedOnElement.textContent = 'Completed on';
-
-    const completedOnDateElement = document.querySelector('.chosen-project .body-reg');
-    completedOnDateElement.textContent = `${completedOnElement.textContent} ${project.completed_on}`;
+    const completedOnElement = document.querySelector('.chosen-project span');
+    completedOnElement.textContent = project.completed_on;
 
     const backgroundImgElement = document.querySelector('.chosen-project .background-img');
     backgroundImgElement.src = project.image;
@@ -46,6 +43,6 @@ function displayProjectDetails(project) {
     foregroundImgElement.src = project.image;
     foregroundImgElement.alt = project.name;
 
-    const projectContentElement = document.querySelector('.chosen-project .body-reg');
+    const projectContentElement = document.querySelector('.chosen-project p.description');
     projectContentElement.innerHTML = project.content;
 }
