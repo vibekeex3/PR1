@@ -27,12 +27,7 @@ fetch('https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects'
 
             const projectDescription = article.querySelector('.headline-reg');
             projectDescription.textContent = project.description;
-            
-            // Optionally, you can update the link as well if it exists
-          //  const learnMoreLink = article.querySelector('a');
-           // if (learnMoreLink) {
-            //    learnMoreLink.href = '#'; // Update the link destination if needed
-           // }
+      
         });
     })
     .catch(error => {

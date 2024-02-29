@@ -133,6 +133,7 @@ nav {
     align-items: center;
     /*  vertically center the items */
     width: 100%;
+    padding-bottom: 10px;
 }
 
 /*************+ buttons styles ******+***********/
@@ -147,7 +148,10 @@ button {
 .btn-blue {
     background: var(--primary);
     color: #FFFFFF;
+}
 
+.btn-blue a {
+    color: #FFFFFF;
 }
 
 .btn-whi {
@@ -155,12 +159,17 @@ button {
     color: var(--medium);
 }
 
-/*************+ Styles for links ******+***********/
-li a:not(:active) {
+.btn-whi a {
     color: var(--medium);
 }
 
-span a:not(:active) {
+/*************+ Styles for links ******+***********/
+
+li a {
+    color: var(--medium);
+}
+
+span a {
     color: var(--primary);
 }
 
@@ -169,7 +178,7 @@ li a.active {
 }
 
 a:hover {
-    color: var(--hover);
+    color: var(--accent);
     cursor: pointer;
     /*image of a pointing hand*/
 }
@@ -182,12 +191,17 @@ button:hover {
     /*image of a pointing hand*/
 }
 
+button a:hover {
+ color: #FFFFFF;
+}
+
 /****************** fixed header ****************+*/
 
 header {
     position: fixed;
     background-color: var(--light);
     z-index: 100;
+    filter: drop-shadow(0px 5px 2px #e1e3eb);
 }
 
 
