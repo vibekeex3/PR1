@@ -52,8 +52,6 @@ h1 {
     padding-top: 100px;
 }
 
-
-
 h3 {
     font-size: 40px;
     padding-bottom: 50px;
@@ -123,15 +121,14 @@ nav li {
     margin: 10px 30px;
 }
 
- a {
+a {
     text-decoration: none;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    /*  vertically center the items */
+    align-items: center; /*  vertically center the items */
     width: 100%;
     padding-bottom: 10px;
 }
@@ -148,20 +145,15 @@ button {
 .btn-blue {
     background: var(--primary);
     color: #FFFFFF;
-}
-
-.btn-blue a {
-    color: #FFFFFF;
+    padding: 15px 33px;
 }
 
 .btn-whi {
     background: var(--light);
     color: var(--medium);
+    padding: 15px 33px;
 }
 
-.btn-whi a {
-    color: var(--medium);
-}
 
 /*************+ Styles for links ******+***********/
 
@@ -177,12 +169,17 @@ li a.active {
     color: var(--primary);
 }
 
-a:hover {
-    color: var(--accent);
+a.btn-blue:hover,
+a.btn-whi:hover {
+    background-color: var(--hover);
     cursor: pointer;
-    /*image of a pointing hand*/
 }
 
+li a:hover,
+span a:hover {
+    color: var(--accent);
+    cursor: pointer;
+}
 
 button:hover {
     background-color: var(--hover);
@@ -191,9 +188,6 @@ button:hover {
     /*image of a pointing hand*/
 }
 
-button a:hover {
- color: #FFFFFF;
-}
 
 /****************** fixed header ****************+*/
 
@@ -240,11 +234,6 @@ header {
     max-width: 100%;
 }
 
-/* .truncate {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  } */
 
 #projects article div * {
     padding: 5px 0px;
@@ -265,6 +254,11 @@ header {
 }
 
 
+#projects article:hover,
+#services article:hover {
+    filter: drop-shadow(0px 0px 8px var(--accent));
+    background-color: var(--light-blue);
+}
 
 
 /*************+ NEWSLETTER SECTION ******+***********/
@@ -429,18 +423,15 @@ div.links ul {
         /* Centers the image horizontally */
     }
 
-    button {
-        padding: 10px 20px;
+    header nav {
+     padding-bottom: 0;
     }
 
 
     /****************** PROJECTS SECTION ****************+*/
 
 
-
-
     #projects div {
-        /* width: 340px; */
         margin: 0 auto;
         flex-direction: column;
     }
@@ -471,11 +462,6 @@ div.links ul {
         /* leave space for the icon */
     }
 
-    /* #newsletter form div {
-    max-width: 320px; 
-    width: 100%;
-} */
-
     #newsletter form img {
         left: 20px;
         /* change absolute positioning more to the left */
@@ -505,7 +491,7 @@ div.links ul {
     footer address {
         margin: 10px 0 50px;
     }
-    
+
     div.links ul {
         grid-gap: 40px;
     }

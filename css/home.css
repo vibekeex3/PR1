@@ -175,8 +175,6 @@ address p:first-of-type {
 }
 
 #services article img {
-    /* width: 40px;
-    height: 40px; */
     display: block;
     margin: auto auto;
 
@@ -187,7 +185,6 @@ address p:first-of-type {
     border-radius: 40px;
     width: 80px;
     height: 80px;
-
 }
 
 
@@ -197,7 +194,6 @@ address p:first-of-type {
     padding: 40px 0px 20px 0px;
 }
 
-/* padding-top: 90px; */
 
 
 
@@ -264,7 +260,6 @@ address p:first-of-type {
     #services article span {
         padding: 40px 0 0;
     }
-
 
 
 }

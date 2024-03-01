@@ -15,37 +15,35 @@
 
     <header class="container">
         <nav class="headline-med">
-
-            <img src="../project-assets/logos/circle.svg" alt="Circle logo" />
+            <a href="../index.html"><img src="../project-assets/logos/circle.svg" alt="Circle logo" /></a>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="#projects" class="active">Projects</a></li>
                 <li><a href="#services">Services</a></li>
             </ul>
-            <button class="headline-med btn-blue"><a href="contact.html">Contact Us</a></button>
+            <a class="headline-med btn-blue" href="contact.html">Contact Us</a>
         </nav>
     </header>
 
 
     <main class="container">
 
-        <section class="chosen-project">
+        <!------------------- CHOSEN PROJECT SECTION ---------------------->
 
+        <section class="chosen-project">
             <h1></h1>
             <div class="project-details">
                 <p class="body-med"></p>
                 <p class="body-reg">Completed on <span></span></p>
             </div>
             <div class="image-container">
-                <img class="background-img" src=""
-                    alt="" />
-                <img class="foreground-img" src=""
-                    alt="" />
+                <img class="background-img" src="" alt="" />
+                <img class="foreground-img" src="" alt="" />
             </div>
             <p class="body-reg description"></p>
-
         </section>
 
+        <!------------------- OTHER PROJECTS SECTION ---------------------->
 
         <section id="projects">
             <h3>Other Projects</h3>
@@ -79,14 +77,17 @@
             </div>
         </section>
 
+
+        <!------------------- NEWSLETTER SECTION ---------------------->
+
         <section id="newsletter">
             <h3>Do you have any questions?</h3>
             <p class="body-reg">Let us help you!</p>
 
-            <form action="" method="post">
+            <form>
 
                 <div>
-                    <input class="headline-reg" type="email" id="newsletter" name="newsletter"
+                    <input class="headline-reg" type="email" name="newsletter"
                         placeholder="Enter your email" required />
                     <img src="../project-assets/newsletter/icon/mail.svg" alt="envelope email icon" />
                 </div>
@@ -94,8 +95,10 @@
             </form>
         </section>
 
-
     </main>
+
+
+    <!------------------- FOOTER ---------------------->
 
     <footer class="container">
         <div>
@@ -114,9 +117,8 @@
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
         </div>
-
     </footer>
-    <!-- <script type="text/javascript" src="../index.js"> </script> -->
+
     <script src="projects.js"></script>
 </body>
 

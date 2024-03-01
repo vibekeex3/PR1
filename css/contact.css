@@ -58,8 +58,6 @@ textarea {
 .cont button {
     width: 100%;
     padding: 30px 0;
-    cursor: pointer;
-    /*image of a pointing hand*/
 }
 
 
@@ -97,7 +95,6 @@ textarea {
     padding: 1em;
     margin-bottom: 10px;
 }
-
 
 .cont button {
     width: 100%;
