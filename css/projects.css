@@ -12,9 +12,12 @@
     justify-content: space-between;
 }
 
-.chosen-project span {
+.chosen-project p.body-reg {
     color: var(--dark);
-}
+} 
+.chosen-project p.body-reg span{
+    color: var(--medium);
+} 
 
 .chosen-project img {
     max-height: 444px;
@@ -50,10 +53,11 @@
 /****************   MOBILE VERSION   **************+*/
 /**************************************************+*/
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 480px) {
 
     .chosen-project div.project-details {
         display: block;
+        text-align: center;
     }
 
     .chosen-project p {
@@ -75,12 +79,6 @@
 div.image-container {
     margin: 15px 0;
 }
-
-
-
-
-
-
 
 
 }
